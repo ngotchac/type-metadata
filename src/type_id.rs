@@ -167,6 +167,8 @@ pub enum TypeIdPrimitive {
 	I64,
 	/// `i128`
 	I128,
+	/// `PhantomData`
+	PhantomData,
 }
 
 /// A type identifier for custom type definitions.

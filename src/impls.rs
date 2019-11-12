@@ -278,7 +278,7 @@ where
 	T: HasTypeId + ?Sized,
 {
 	fn type_id() -> TypeId {
-		<T>::type_id()
+		TypeIdPrimitive::PhantomData.into()
 	}
 }
 
