@@ -44,7 +44,7 @@ fn primitives() {
 	assert_type_id!(Box<String>, TypeIdPrimitive::Str);
 	assert_type_id!(&String, TypeIdPrimitive::Str);
 	assert_type_id!([bool], TypeIdSlice::new(bool::meta_type()));
-	assert_type_id!(PhantomData<bool>, TypeIdPrimitive::Bool);
+	assert_type_id!(PhantomData<bool>, TypeIdPrimitive::PhantomData);
 }
 
 #[test]
